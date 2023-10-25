@@ -3,18 +3,18 @@ Data and code for Keogh et al. 'Field experiment in lake and stream gardens reve
 
 # R files
 pgran.R <br />
--- Code for statistical analyses of morphometric data and data visualization
-dartR_Fst.R
--- Code for calculating genetic distances (Fst) between sites and habitats
-colony_input.R
--- Code for setting up files for COLONY analysis
+-- Code for statistical analyses of morphometric data and data visualization <br />
+dartR_Fst.R <br />
+-- Code for calculating genetic distances (Fst) between sites and habitats <br />
+colony_input.R <br />
+-- Code for setting up files for COLONY analysis <br />
 
 # Data
-pgran_morph.xlsx
--- Main data file containing morphological measurements of all specimens
-strata.txt & habitat.txt
--- Used by dartR_Fst.R code to calculate Fst
-pgran88_biunlink_callrate_maf.recode.vcf
--- Filtered VCF file used to calculate Fst
-colony.zip
--- Input and output of COLONY analysis
+pgran_morph.xlsx <br />
+-- Main data file containing morphological measurements of all specimens <br />
+strata.txt & habitat.txt <br />
+-- Used by dartR_Fst.R code to calculate Fst <br />
+pgran88_biunlink_callrate_maf.recode.vcf <br />
+-- Filtered VCF file used to calculate Fst <br />
+colony.zip <br />
+-- Input and output of COLONY analysis <br />

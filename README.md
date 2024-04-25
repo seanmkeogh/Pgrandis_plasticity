@@ -17,4 +17,4 @@ strata.txt & habitat.txt <br />
 pgran88_biunlink_callrate_maf.recode.vcf <br />
 -- Filtered VCF file used to calculate Fst <br />
 colony.zip <br />
--- Input and output of COLONY analysis <br />
+-- Input and output of 90%, 80%, and 70% data completeness COLONY analyses <br />

@@ -1,15 +1,16 @@
 library(dartR)
 library(snpStats)
 library(tidyverse)
+library(mclm)
 setwd('~/Box/myprojects/Pgrandis/data/molecular/RAD_seq/dartR/')
 
 #First generate VCF with biallelic, unlinked, and no monomorphic sites on vcf file
 #RUN in Terminal ->
+#RUN in Terminal ->
 # vcftools --vcf file.vcf --min-alleles 2 --max-alleles 2 --recode --recode-INFO-all --out file_bi
 # vcftools --vcf file_bi.recode.vcf --thin 5000 --recode --recode-INFO-all --out file_bi_biunlink
-# vcftools --vcf pgran88_biunlink.recode.vcf --max-missing 0.90 --recode --recode-INFO-all --out pgran88_biunlink_callrate
+# vcftools --vcf pgran88_biunlink.recode.vcf --max-missing 0.90/0.80/0.70 --recode --recode-INFO-all --out pgran88_biunlink_callrate
 # vcftools --vcf pgran88_biunlink_callrate.recode.vcf --maf 0.03 --recode --recode-INFO-all --out pgran88_biunlink_callrate_maf
-# 355 snps
 
 # read in vcf
 gl_usnps_all <- dartR::gl.read.vcf("pgran88_biunlink_callrate_maf.recode.vcf")
